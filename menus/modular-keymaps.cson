@@ -1,8 +1,8 @@
 menu: [
 	label: "Atom" #Packages
 	submenu: [
-		label: "Keymap…" #Modular Keymaps
+		label: "Keymap…" #Modular Keymaps Black
 		#submenu: [
 			#label: "Open"
-		command: 'modular-keymaps:open'
+		command: 'modular-keymaps-black:open'
 ]	] #]

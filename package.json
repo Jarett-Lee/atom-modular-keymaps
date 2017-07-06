@@ -1,6 +1,6 @@
 {
-  "name": "modular-keymaps",
-  "version": "0.1.5",
+  "name": "modular-keymaps-black",
+  "version": "0.1.6",
   "description": "A modular solution to Atom Keymaps.",
   "keywords": [
     "keybindings",
@@ -9,13 +9,13 @@
     "modules",
     "config"
   ],
-  "homepage": "https://atom.io/packages/modular-keymaps#readme",
-  "repository": "danielbayley/atom-modular-keymaps",
-  "bugs": "https://github.com/danielbayley/atom-modular-keymaps/issues",
+  "homepage": "https://atom.io/packages/separate-keymaps#readme",
+  "repository": "jarett-lee/atom-modular-keymaps-black",
+  "bugs": "https://github.com/jarett-lee/atom-modular-keymaps/issues",
   "author": {
-    "name": "Daniel Bayley",
-    "email": "daniel.bayley@me.com",
-    "url": "https://github.com/danielbayley"
+    "name": "Jarett Lee",
+    "email": "jarett.lee.pi@gmail.com",
+    "url": "https://github.com/jarett-lee"
   },
   "private": true,
   "license": "MIT",

@@ -1,7 +1,7 @@
 [![badge][apm]][package]
 [![badge][chat]][#slack]
 
-Modular Keymaps
+Modular Keymaps Black
 ===============
 A modular solution to [Atom] keymaps.
 
@@ -17,15 +17,14 @@ Install
 
 License
 -------
-[MIT] © [Daniel Bayley]
+Copyright for portions of project modular-keymaps-black are held by [Daniel Bayley, 2016] as part of project Bar. All other copyright for project modular-keymaps-black are held by [Jarett Lee, 2017].
 
 [MIT]:              LICENSE.md
-[Daniel Bayley]:    https://github.com/danielbayley
+[Jarett Lee]:       https://github.com/jarett-lee
 [atom]:             https://atom.io
 [apm]:              https://img.shields.io/apm/v/modular-keymaps.svg?style=flat-square
-[package]:          https://atom.io/packages/modular-keymaps
+[package]:          https://atom.io/packages/modular-keymaps-black
 [chat]:             https://img.shields.io/badge/chat-atom.io%20slack-ff69b4.svg?style=flat-square
 [#slack]:           https://atom-slack.herokuapp.com
 
-[`ATOM_HOME`]:      http://flight-manual.atom.io/using-atom/sections/basic-customization/#custom-home-location-with-an-environment-variable
-[sync-settings]:    https://atom.io/packages/sync-settings
+[fork from]:        https://atom.io/packages/modular-keymaps
