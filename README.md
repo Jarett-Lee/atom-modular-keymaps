@@ -17,7 +17,7 @@ Install
 
 License
 -------
-Copyright for portions of project modular-keymaps-black are held by [Daniel Bayley, 2016] as part of project Bar. All other copyright for project modular-keymaps-black are held by [Jarett Lee, 2017].
+Copyright for portions of project modular-keymaps-black are held by [Daniel Bayley, 2016] as part of project modular-keymaps. All other copyright for project modular-keymaps-black are held by [Jarett Lee, 2017].
 
 [MIT]:              LICENSE.md
 [Jarett Lee]:       https://github.com/jarett-lee
