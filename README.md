@@ -5,13 +5,11 @@ Modular Keymaps
 ===============
 A modular solution to [Atom] keymaps.
 
-Any valid keymap (.cson) file inside [`ATOM_HOME`]`/keymaps/` will be loaded automatically, or reloaded if modified.
+Any valid keymap (.json, .cson) file inside [`ATOM_HOME`]`/keymaps/` will be loaded on activation and reloaded when modified. After adding new keymaps, you must reload atom to activate them.
 
 This package does not interfere with the existing `keymap.cson`, so you can slowly transition to this more modular approach.
 
 The Atom `Keymap…` menu item will be overridden to open your keymaps folder in a new window, along with the default `keymap.cson` if it still exists.
-
-Your keymaps will be automatically added to the list of extra backup files if the [sync-settings] package is installed.
 
 Install
 -------
