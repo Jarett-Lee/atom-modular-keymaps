@@ -1,7 +1,7 @@
 {
   "name": "modular-keymaps-black",
-  "version": "0.1.6",
-  "description": "A modular solution to Atom Keymaps.",
+  "version": "0.0.0",
+  "description": "My robust modular keymap management system.",
   "keywords": [
     "keybindings",
     "keymap",

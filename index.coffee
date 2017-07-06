@@ -41,7 +41,6 @@ loadKeymap = (keymap) ->
   try
     options =
       watch: true
-    console.log options
     atom.keymaps.loadKeymap keymap, options
   catch error
     displayError keymap, error
