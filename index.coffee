@@ -16,7 +16,7 @@ activate = ->
 #-------------------------------------------------------------------------------
 
 loadAllKeymaps = (rootPath) ->
-  fs.readdir keymaps, (err, pathNames) ->
+  fs.readdir rootPath, (err, pathNames) ->
     throw err if err
 
     fullPaths = pathNames.map (name) -> resolve rootPath, name
