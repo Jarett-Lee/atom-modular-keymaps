@@ -55,8 +55,8 @@ displayError = (keymap, error) ->
 #-------------------------------------------------------------------------------
 addOpenCommand = () ->
   subs.add atom.commands.add 'atom-workspace',
-    'modular-keymaps:open': ->
-      open [ keymaps, resolve atom.configDirPath, keymap.cson ]
+    'modular-keymaps-black:open': ->
+      open [ keymaps, resolve atom.configDirPath, 'keymap.cson' ]
 
 open = (keymaps) -> atom.open pathsToOpen: keymaps #, newWindow: true
 
