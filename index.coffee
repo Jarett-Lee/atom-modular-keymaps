@@ -7,14 +7,12 @@ fs = require 'fs'
 keymaps = resolve atom.configDirPath, 'keymaps' # folder
 
 #-------------------------------------------------------------------------------
-
 activate = ->
   fs.mkdirSync keymaps if !fs.existsSync keymaps
   loadAllKeymaps keymaps
   addOpenCommand()
 
 #-------------------------------------------------------------------------------
-
 loadAllKeymaps = (rootPath) ->
   fs.readdir rootPath, (err, pathNames) ->
     throw err if err
@@ -40,12 +38,22 @@ valid = (file) ->
   ///#{tempkeymaps}.*\.[cj]son$///.test file
 
 loadKeymap = (keymap) ->
-  options =
-    watch: true
-  atom.keymaps.loadKeymap keymap, options
+  try
+    options =
+      watch: true
+    console.log options
+    atom.keymaps.loadKeymap keymap, options
+  catch error
+    displayError keymap, error
+    atom.keymaps.watchKeymap keymap
+
+displayError = (keymap, error) ->
+  tempOptions =
+    dismissable: true
+    detail: error.stack
+  atom.notifications.addError "Failed to load `#{keymap}`", tempOptions
 
 #-------------------------------------------------------------------------------
-
 addOpenCommand = () ->
   subs.add atom.commands.add 'atom-workspace',
     'modular-keymaps:open': ->
@@ -54,7 +62,8 @@ addOpenCommand = () ->
 open = (keymaps) -> atom.open pathsToOpen: keymaps #, newWindow: true
 
 #-------------------------------------------------------------------------------
+deactivate = ->
+  subs.dispose()
 
-deactivate = -> subs.dispose()
 #-------------------------------------------------------------------------------
 module.exports = {activate, deactivate}
