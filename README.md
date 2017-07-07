@@ -1,4 +1,3 @@
-[![badge][apm]][package]
 [![badge][chat]][#slack]
 
 Modular Keymaps Black
