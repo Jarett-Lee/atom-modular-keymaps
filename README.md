@@ -3,7 +3,7 @@
 
 Modular Keymaps Black
 ===============
-My personal modular keymap management system forked from (modular-keymaps)[https://atom.io/packages/modular-keymaps]. This package caters to my specific preferences.
+My personal modular keymap management system forked from [modular-keymaps](https://atom.io/packages/modular-keymaps). This package caters to my specific preferences.
 
 Any valid keymap (.json, .cson) file inside `.atom/keymaps/` will be loaded on activation and reloaded when modified. After adding new keymaps, you must reload atom to activate them.
 
