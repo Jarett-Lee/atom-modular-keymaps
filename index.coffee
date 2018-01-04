@@ -13,19 +13,18 @@ activate = ->
   addOpenCommand()
 
 #-------------------------------------------------------------------------------
+
 loadAllKeymaps = (rootPath) ->
-  fs.readdir rootPath, (err, pathNames) ->
-    throw err if err
+  pathNames = fs.readdirSync rootPath
+  fullPaths = pathNames.map (name) -> resolve rootPath, name
 
-    fullPaths = pathNames.map (name) -> resolve rootPath, name
+  for path in fullPaths
+    if validDir path
+      loadAllKeymaps path
 
-    fullPaths
-      .filter validDir
-      .map (dir) -> loadAllKeymaps dir
-
-    fullPaths
-      .filter valid
-      .map loadKeymap
+  for path in fullPaths
+    if valid path
+      loadKeymap path
 
 validDir = (fullPath) ->
   stats = fs.statSync fullPath
